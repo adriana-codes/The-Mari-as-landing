@@ -5,3 +5,30 @@
 body {
   font-family: var(--font);
 }
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../imgs/the_marias_band.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.hero h1,
+p {
+  color: #ffff;
+}
+
+.hero a {
+  text-decoration: none;
+  border: 1px solid #6f2d83;
+  border-radius: 18px;
+  padding: 5px 12px;
+  background: #6f2d83;
+  color: #ffff;
+  font-size: 0.7em;
+}
