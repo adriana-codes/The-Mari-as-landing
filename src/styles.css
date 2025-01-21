@@ -1,5 +1,6 @@
 :root {
   --font: Poppins;
+  --accent-color: #6f2d83;
 }
 
 body {
@@ -7,7 +8,6 @@ body {
 }
 
 .hero {
-  max-width: 1200px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../imgs/the_marias_band.jpeg");
@@ -15,20 +15,221 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 .hero h1,
-p {
+p,
+h3 {
   color: #ffff;
+}
+h2 {
+  color: #6b529cf4;
 }
 
 .hero a {
   text-decoration: none;
-  border: 1px solid #6f2d83;
+  border: 1px solid var(--accent-color);
   border-radius: 18px;
   padding: 5px 12px;
-  background: #6f2d83;
+  background: var(--accent-color);
   color: #ffff;
   font-size: 0.7em;
+}
+
+.about-the-band {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: /*#17091b*/ rgb(17, 16, 29);
+  grid-gap: 40px;
+  padding: 100px;
+}
+
+.about-band-img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.about-title {
+  padding: 0 10px;
+}
+.about-desc {
+  font-size: 0.9em;
+  padding: 0 10px;
+  text-align: start;
+  opacity: 0.7;
+}
+
+.btn {
+  text-decoration: none;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: #ffff;
+  font-size: 0.7em;
+  font-weight: 600;
+  border-radius: 19px;
+  padding: 8px 15px;
+}
+
+.music-section {
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../imgs/submarine-the-marías.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.spoti-player {
+  width: 100%;
+  height: 500px;
+  padding: 0 35px;
+}
+
+.img-maria-profile {
+  max-height: 500px;
+  border-radius: 9px;
+  opacity: 0.7;
+}
+
+.more-the-marias {
+  background: rgb(17, 16, 29);
+  padding: 45px 0;
+}
+
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid-container p,
+h3 {
+  text-align: center;
+}
+
+.vid-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+}
+
+.footer-backgrnd {
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../imgs/The-Marias.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 35px 100px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 15px;
+}
+
+.footer-grid h3 {
+  text-align: start;
+}
+
+footer p,
+ul a {
+  opacity: 0.7;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+ul a:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .about-the-band {
+    grid-template-columns: 1fr;
+    padding: 30px 0 60px 0;
+  }
+  .btn {
+    display: none;
+  }
+
+  .vid-grid {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 20px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  footer h3 {
+    font-size: 0.7em;
+  }
+
+  footer ul,
+  p {
+    font-size: 0.5em;
+  }
+}
+
+@media (max-width: 430px) {
+  h2,
+  h3 {
+    font-size: 0.9em;
+  }
+
+  .about-desc {
+    font-size: 0.6em;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .spoti-player {
+    max-width: fit-content;
+  }
+
+  .img-maria-profile {
+    display: none;
+  }
+
+  .vid-grid {
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+  }
+  .hide {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-backgrnd {
+    padding: 20px;
+    line-height: 1;
+  }
 }
