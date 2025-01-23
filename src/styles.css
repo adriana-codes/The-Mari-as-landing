@@ -5,6 +5,7 @@
 
 body {
   font-family: var(--font);
+  background-color: #272044;
 }
 
 .hero {
@@ -15,7 +16,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 100px 0;
+  padding: 200px 0;
+  line-height: 0.8;
 }
 
 .hero h1,
@@ -23,18 +25,29 @@ p,
 h3 {
   color: #ffff;
 }
+
+h1 {
+  font-size: 4em;
+}
+
+.hero p {
+  font-size: 2em;
+}
+
 h2 {
   color: #6b529cf4;
+  text-align: center;
 }
 
 .hero a {
   text-decoration: none;
   border: 1px solid var(--accent-color);
-  border-radius: 18px;
-  padding: 5px 12px;
+  border-radius: 10px;
+  padding: 16px 32px;
   background: var(--accent-color);
   color: #ffff;
-  font-size: 0.7em;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 
 .about-the-band {
@@ -47,6 +60,7 @@ h2 {
 
 .about-band-img {
   width: 100%;
+  display: block;
   opacity: 0.8;
 }
 
@@ -68,7 +82,9 @@ h2 {
   font-size: 0.7em;
   font-weight: 600;
   border-radius: 19px;
-  padding: 8px 15px;
+  padding: 14px 15px;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
 .music-section {
@@ -171,8 +187,19 @@ ul a:hover {
     grid-template-columns: 1fr;
     padding: 30px 0 60px 0;
   }
+
+  .about-band-img {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   .btn {
     display: none;
+  }
+
+  .grid-contents {
+    padding: 0 10px;
+    margin: 14px;
   }
 
   .vid-grid {
@@ -191,6 +218,10 @@ ul a:hover {
   footer ul,
   p {
     font-size: 0.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
   }
 }
 
